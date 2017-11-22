@@ -10,13 +10,14 @@ export class Section2Component implements OnInit {
   serverCreationStatus = 'No server was created';
   serverName = 'Server 1';
   serverCreated = false;
-
+  servers = ['testserver', 'testserver 2', 'testserver 3'];
   constructor() { }
 
   ngOnInit() {
   }
   onCreateServer(){
     this.serverCreated = true;
+    this.servers.push(this.serverName);
     this.serverCreationStatus = 'Server Created! Name is ' + this.serverName;
   }
   onUpdateServerName(event: any){

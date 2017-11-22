@@ -1,0 +1,8 @@
+.online{
+    color: aliceblue;
+    box-shadow: 3px 3px 8px red;
+}
+.offline{
+    color: aliceblue;
+    box-shadow: 3px 3px 8px green;
+}
