@@ -18,6 +18,16 @@
         </li>
       </ol>
       <hr>
+      <!--<button class="btn btn-success" (click)="showCode = !showCode">Show Code</button>-->
+      <button class="btn btn-success" (click)="onDetails()">Show Code</button>
+      <p *ngIf="showCode">Secret Code = tiger</p>
+      <hr>
+      <div
+              *ngFor="let logItem of log; let i = index"
+              [ngStyle]="{backgroundColor: i >= 4 ? 'green' : 'white'}"
+              [ngClass]="{'white-color': i >=4}">
+        # {{ i }} - {{ logItem }}
+      </div>
     </div>
   </div>
 </div>

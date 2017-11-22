@@ -7,6 +7,7 @@ import {HttpModule} from "@angular/http";
 import { Section2Component } from './section-2/section-2.component';
 import { StylingComponent } from './styling/styling.component';
 import { Section2FinnalComponent } from './section-2-finnal/section-2-finnal.component';
+import { Section3Component } from './section3/section3.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { Section2FinnalComponent } from './section-2-finnal/section-2-finnal.com
     Section2Component,
     StylingComponent,
     Section2FinnalComponent,
+    Section3Component,
   ],
   imports: [
     BrowserModule,
